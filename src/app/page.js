@@ -1,6 +1,16 @@
 import Image from "next/image";
+//  import testfunction, { testfunction2,testfunction3} from "./test";  
+
+  import testfunction from "./test";  
 
 export default function Home() {
+  const firstName="elahe";
+  const lastName="hoseini";
+
+
+  testfunction();
+  // testfunction2();
+  // testfunction3();
   return (
     <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
@@ -8,21 +18,37 @@ export default function Home() {
           className="dark:invert"
           src="/next.svg"
           alt="Next.js logo"
-          width={180}
+          width={180} 
           height={38}
           priority
         />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
+
+      <p>{`${firstName} ${lastName}`}</p>
+        <ol className=" list-inside list-decimal text-sm/6 ">
           <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.js
-            </code>
-            .
+            اضافه کردن فونت  فارسی به پروژه {" "}
+            {/* <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
+            </code> */}
+            
           </li>
           <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
+          نمونه متن برای فونت فارسیس
           </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
         </ol>
 
         <div className="flex gap-4 items-center flex-col sm:flex-row">
